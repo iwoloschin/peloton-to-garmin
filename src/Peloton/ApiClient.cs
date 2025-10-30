@@ -57,7 +57,7 @@ namespace Peloton
 			{
 				var response = await $"{AuthBaseUrl}"
 				.WithHeader("Accept-Language", "en-US")
-				.WithHeader("User-Agent", overrideUserAgent ?? "PostmanRuntime/7.26.20")
+				.WithHeader("User-Agent", overrideUserAgent ?? "curl/8.7.1")
 				.WithTimeout(30)
 				.PostJsonAsync(new AuthRequest()
 				{
